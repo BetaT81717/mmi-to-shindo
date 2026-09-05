@@ -2,44 +2,45 @@ const mmi = ["I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X", "XI", 
 const shindo = ["0", "1", "2", "3", "4", "5-", "5+", "6-", "6+", "7"]
 
 document.getElementById('msub').onclick = function(){
+	document.getElementById('errordisp').textContent = ""
 	let mmival = document.getElementById('mmiin').value
 		if (mmi.includes(mmival)){
 			if (mmival === "I"){
 				console.log(mmival)
-				document.getElementById('shindo').value = "0"
+				document.getElementById('shindoin').value = "0"
 			}else if (mmival === "II"){
 				console.log(mmival)
-				document.getElementById('shindo').value = "1"
+				document.getElementById('shindoin').value = "1"
 			}else if (mmival === "III"){
 				console.log(mmival)
-				document.getElementById('shindo').value = "2"
+				document.getElementById('shindoin').value = "2"
 			}else if (mmival === "IV"){
 				console.log(mmival)
-				document.getElementById('shindo').value = "3"
+				document.getElementById('shindoin').value = "3"
 			}else if (mmival === "V"){
 				console.log(mmival)
-				document.getElementById('shindo').value = "4"
+				document.getElementById('shindoin').value = "4"
 			}else if (mmival === "VI"){
 				console.log(mmival)
-				document.getElementById('shindo').value = "5-"
+				document.getElementById('shindoin').value = "5-"
 			}else if (mmival === "VII"){
 				console.log(mmival)
-				document.getElementById('shindo').value = "5+"
+				document.getElementById('shindoin').value = "5+"
 			}else if (mmival === "VIII"){
 				console.log(mmival)
-				document.getElementById('shindo').value = "6-"
+				document.getElementById('shindoin').value = "6-"
 			}else if (mmival === "IX"){				
 				console.log(mmival)
-				document.getElementById('shindo').value = "6+"
+				document.getElementById('shindoin').value = "6+"
 			}else if (mmival === "X"){				
 				console.log(mmival)
-				document.getElementById('shindo').value = "6+"
+				document.getElementById('shindoin').value = "6+"
 			}else if (mmival === "XI"){				
 				console.log(mmival)
-				document.getElementById('shindo').value = "7"
+				document.getElementById('shindoin').value = "7"
 			}else if (mmival === "XII"){				
 				console.log(mmival)
-				document.getElementById('shindo').value = "7"	
+				document.getElementById('shindoin').value = "7"	
 			}
 			else {
 				console.log(`Error: Type or value error`)
@@ -50,6 +51,7 @@ document.getElementById('msub').onclick = function(){
 		}
 }
 document.getElementById('ssub').onclick = function(){
+	document.getElementById('errordisp').textContent = ""
 	let shindoval = document.getElementById('shindoin').value
 		if (shindo.includes(shindoval)){
 			if (shindoval === "0"){
